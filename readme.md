@@ -1,18 +1,20 @@
 ### MutateX Library
 
 #### Installation
-`npm install @num.plus/lib.mutate-x`
+`npm install @bhoos/mutate-x`
 
 #### APIs
-`createMutateX`
+`createState`
 
 `useMutateX`
+
+`useMutateXSelector`
 
 #### Usage 
 ```typescript
 // Create global store
 
-const TodoState = createMutateX({
+const TodoState = createState({
   todos: [
     // id is treated specially as key
     {id: 1, title: 'Get Milk', completed: false }
